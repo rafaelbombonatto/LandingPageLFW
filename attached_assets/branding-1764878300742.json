@@ -1,0 +1,97 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Lora",
+      "role": "body"
+    },
+    {
+      "family": "Roboto",
+      "role": "body"
+    },
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    },
+    {
+      "family": "Google Sans",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#274E13",
+    "accent": "#0000EE",
+    "background": "#EEEEEE",
+    "textPrimary": "#274E13",
+    "link": "#274E13"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Lora",
+      "heading": "Lora"
+    },
+    "fontStacks": {
+      "heading": [
+        "Lora"
+      ],
+      "body": [
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Lora"
+      ]
+    },
+    "fontSizes": {
+      "h1": "45.3333px",
+      "h2": "45.3333px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "0px"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.ico",
+    "ogImage": "File saved at: attached_assets/ogImage.png"
+  },
+  "__framework_hints": [],
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "Both buttons have the same background color (#545457), which is neutral and does not indicate a primary call-to-action. Therefore, I cannot select a primary button from the given options."
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "Since both buttons are from the same color group and have the same background color, I cannot select a secondary button either. There are no valid options for primary or secondary buttons."
+    },
+    "confidence": 0.8
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "general public interested in food and wellness"
+  },
+  "designSystem": {
+    "framework": "unknown",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.8,
+    "colors": 0.9,
+    "overall": 0.8500000000000001
+  }
+}
