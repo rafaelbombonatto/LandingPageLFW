@@ -78,13 +78,20 @@ export default function ProductsSection() {
             style={{ scrollSnapType: "x mandatory" }}
           >
             {products.map((product) => (
-              <Card
+              /*<Card
                 key={product.id}
                 className="group relative min-w-[260px] flex-shrink-0 overflow-visible border-0 md:min-w-[300px] hover-elevate"
                 style={{ scrollSnapAlign: "start" }}
                 data-testid={`card-product-${product.id}`}
-              >
-                <div className="aspect-square overflow-hidden rounded-md">
+              >*/
+            <Card
+              key={product.id}
+              className="group relative mx-auto h-[320px] w-[260px] flex-shrink-0 overflow-visible border-0 sm:h-[360px] sm:w-[280px] md:h-auto md:w-auto md:min-w-[300px] hover-elevate"
+              style={{ scrollSnapAlign: "start" }}
+              data-testid={`card-product-${product.id}`}
+            >
+
+                <div className="aspect-[4/3] overflow-hidden rounded-md md:aspect-square">
                   <img
                     src={product.image}
                     alt={product.name}
