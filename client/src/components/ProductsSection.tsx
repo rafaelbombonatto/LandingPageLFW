@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
 import { useRef, useState } from "react";
 
 import caseirinhoFrango from "@assets/generated_images/caseirinho_de_frango_dish.png";
-import canjaIntegral from "@assets/generated_images/canja_integral_soup_dish.png";
+import saborSertanejo from "@assets/generated_images/sabor_sertanejo.png.png";
 import moqueca from "@assets/generated_images/moqueca_fish_stew_dish.png";
 import nhoque from "@assets/generated_images/nhoque_mandioquinha_gnocchi.png";
 import carneDesfiada from "@assets/generated_images/carne_desfiada_shredded_beef.png";
@@ -13,7 +13,7 @@ import fileFrango from "@assets/generated_images/chicken_cashew_crust_dish.png";
 // todo: remove mock functionality - replace with real product data from API
 const products = [
   { id: 1, name: "Caseirinho de Frango", image: caseirinhoFrango },
-  { id: 2, name: "Canja Integral", image: canjaIntegral },
+  { id: 2, name: "Sabor Sertanejo", image: saborSertanejo },
   { id: 3, name: "Moqueca de Cação", image: moqueca },
   { id: 4, name: "Nhoque de Mandioquinha", image: nhoque },
   { id: 5, name: "Carne Desfiada", image: carneDesfiada },
