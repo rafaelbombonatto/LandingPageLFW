@@ -92,6 +92,22 @@ const detoxPlans: DetoxPlan[] = [
       {day: "1", time: "17:00", meal: "Mix de Nuts" },
       {day: "1", time: "20:00", meal: "Sopa Low Carb de Frango" },
       {day: "1", time: "22:00", meal: "Suco Relax" },
+      {day: "", time: "", meal: "" },
+      {day: "2", time: "08:00", meal: "Suco Super Green" },
+      {day: "2", time: "10:00", meal: "Suco Desintox" },
+      {day: "2", time: "12:00", meal: "Filé de Tilápia com Legumes" },
+      {day: "2", time: "15:00", meal: "Suco Blue Majik" },
+      {day: "2", time: "17:00", meal: "Mix de Nuts" },
+      {day: "2", time: "20:00", meal: "Sopa de Frango com Alho Poró" },
+      {day: "2", time: "22:00", meal: "Suco Suchá" },
+      {day: "", time: "", meal: "" },
+      {day: "3", time: "08:00", meal: "Suco Super Green" },
+      {day: "3", time: "10:00", meal: "Suco Vital Max" },
+      {day: "3", time: "12:00", meal: "Fricassê de Frango com Arroz Fake de Couve-Flor" },
+      {day: "3", time: "15:00", meal: "Suco Imuno" },
+      {day: "3", time: "17:00", meal: "Mix de Nuts" },
+      {day: "3", time: "20:00", meal: "Canja Fit" },
+      {day: "3", time: "22:00", meal: "Suco Relax" },
     ],
     whatsappMessage: "Olá! Gostaria de pedir o Kit Detox 3 Dias.",
   },
@@ -125,6 +141,38 @@ const detoxPlans: DetoxPlan[] = [
       {day: "1", time: "17:00", meal: "Mix de Nuts" },
       {day: "1", time: "20:00", meal: "Sopa Low Carb de Frango" },
       {day: "1", time: "22:00", meal: "Suco Relax" },
+      {day: "", time: "", meal: "" },
+      {day: "2", time: "08:00", meal: "Suco Super Green" },
+      {day: "2", time: "10:00", meal: "Suco Desintox" },
+      {day: "2", time: "12:00", meal: "Filé de Tilápia com Legumes" },
+      {day: "2", time: "15:00", meal: "Suco Blue Majik" },
+      {day: "2", time: "17:00", meal: "Mix de Nuts" },
+      {day: "2", time: "20:00", meal: "Sopa de Frango com Alho Poró" },
+      {day: "2", time: "22:00", meal: "Suco Suchá" },
+      {day: "", time: "", meal: "" },
+      {day: "3", time: "08:00", meal: "Suco Super Green" },
+      {day: "3", time: "10:00", meal: "Suco Vital Max" },
+      {day: "3", time: "12:00", meal: "Fricassê de Frango com Arroz Fake de Couve-Flor" },
+      {day: "3", time: "15:00", meal: "Suco Imuno" },
+      {day: "3", time: "17:00", meal: "Mix de Nuts" },
+      {day: "3", time: "20:00", meal: "Canja Fit" },
+      {day: "3", time: "22:00", meal: "Suco Relax" },
+      {day: "", time: "", meal: "" },
+      {day: "4", time: "08:00", meal: "Suco Super Green" },
+      {day: "4", time: "10:00", meal: "Suco Desintox" },
+      {day: "4", time: "12:00", meal: "Filé de Peixe Com Crosta de Gergelim" },
+      {day: "4", time: "15:00", meal: "Suco Blue Majik" },
+      {day: "4", time: "17:00", meal: "Mix de Nuts" },
+      {day: "4", time: "20:00", meal: "Sopa Low Carb de Frango" },
+      {day: "4", time: "22:00", meal: "Suco Suchá" },
+      {day: "", time: "", meal: "" },
+      {day: "5", time: "08:00", meal: "Suco Super Green" },
+      {day: "5", time: "10:00", meal: "Suco Vital Max" },
+      {day: "5", time: "12:00", meal: "Frango em Curry com Legumes" },
+      {day: "5", time: "15:00", meal: "Suco Imuno" },
+      {day: "5", time: "17:00", meal: "Mix de Nuts" },
+      {day: "5", time: "20:00", meal: "Sopa de Frango com Alho Poró" },
+      {day: "5", time: "22:00", meal: "Suco Relax" },
     ],
     whatsappMessage: "Olá! Gostaria de pedir o Kit Detox 5 Dias.",
   },
@@ -328,12 +376,25 @@ export default function DetoxSection() {
                 <h4 className="mb-3 font-semibold text-foreground">
                   Cronograma:
                 </h4>
+                <div className="flex items-center gap-3 rounded-md bg-muted/50 p-3">                  
+                  
+                  <Badge variant="outline" className="shrink-0">
+                    Dia
+                  </Badge>
+                  <Badge variant="outline" className="shrink-0">
+                    Hora
+                  </Badge>
+                  <span className="text-sm text-foreground">Refeição</span>
+                </div>
                 <div className="space-y-2">
                   {selectedPlan.schedule.map((item) => (
                     <div
                       key={`${selectedPlan.id}-schedule-${item.time}`}
                       className="flex items-center gap-3 rounded-md bg-muted/50 p-3"
                     >
+                      <Badge variant="outline" className="shrink-0">
+                        {item.day}
+                      </Badge>
                       <Badge variant="outline" className="shrink-0">
                         {item.time}
                       </Badge>
