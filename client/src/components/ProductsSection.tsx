@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
 import { useRef, useState } from "react";
 
 import caseirinhoFrango from "@assets/generated_images/caseirinho_de_frango_dish.png";
-import saborSertanejo from "@assets/generated_images/sabor_sertanejo.png.png";
+import saborSertanejo from "@assets/generated_images/sabor_sertanejo.png";
 import moqueca from "@assets/generated_images/moqueca_fish_stew_dish.png";
 import nhoque from "@assets/generated_images/nhoque_mandioquinha_gnocchi.png";
 import carneDesfiada from "@assets/generated_images/carne_desfiada_shredded_beef.png";
