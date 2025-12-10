@@ -113,6 +113,17 @@ export default function Footer() {
                   iFood
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://oia.99app.com/dlp9/0XsnCy?area=BR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground transition-colors hover:text-foreground"
+                  data-testid="link-footer-99food"
+                >
+                  99 Food
+                </a>
+              </li>
             </ul>
           </div>
         </div>

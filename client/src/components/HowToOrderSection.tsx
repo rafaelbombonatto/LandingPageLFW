@@ -23,6 +23,13 @@ export default function HowToOrderSection() {
     );
   };
 
+  const handle99Food = () => {
+    window.open(
+      "https://oia.99app.com/dlp9/0XsnCy?area=BR",
+      "_blank"
+    );
+  };
+
   return (
     <section id="como-pedir" className="bg-muted/30 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -174,6 +181,59 @@ export default function HowToOrderSection() {
                 data-testid="button-order-ifood"
               >
                 Pedir no iFood
+              </Button>
+            </div>
+          </Card>
+
+          <Card className="p-6 md:p-8">
+            <div className="mb-6">
+              <h3 className="mb-2 text-2xl font-bold text-foreground">99 Food</h3>
+              <p className="text-muted-foreground">
+                A conveniência e familiaridade da plataforma
+              </p>
+            </div>
+
+            <div className="mb-6 space-y-4">
+              <div className="flex items-start gap-3">
+                <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                <div>
+                  <p className="font-medium">Horário de funcionamento</p>
+                  <p className="text-sm text-muted-foreground">
+                    Diariamente das 9h às 22h
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                <div>
+                  <p className="font-medium">Entrega pela plataforma</p>
+                  <p className="text-sm text-muted-foreground">
+                    Frete calculado pela 99 Food
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CreditCard className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                <div>
+                  <p className="font-medium">Pagamento integrado</p>
+                  <p className="text-sm text-muted-foreground">
+                    Use seu saldo ou cupons do 99 Food
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-auto">
+              <Button
+                variant="outline"
+                className="w-full rounded-full"
+                size="lg"
+                onClick={handle99Food}
+                data-testid="button-order-99food"
+              >
+                Pedir na 99 Food
               </Button>
             </div>
           </Card>

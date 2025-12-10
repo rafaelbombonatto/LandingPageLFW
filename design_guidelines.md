@@ -60,7 +60,7 @@ Primary spacing: 4, 8, 12, 16, 20, 24
 - Left-aligned content overlay with semi-transparent blur background for text/buttons
 - Headline: "Marmitas Saudáveis Entregues na Sua Casa"
 - Subheadline: Mission statement about quality and convenience
-- Two prominent CTAs side-by-side: "Pedir pelo InstaDelivery" + "Pedir no iFood"
+- Two prominent CTAs side-by-side: "Pedir pelo InstaDelivery" + "Pedir no 99 Food" + "Pedir no iFood"  
 - Height: min-h-[600px] md:min-h-[700px]
 
 ### 3. Products Showcase
@@ -81,7 +81,7 @@ Primary spacing: 4, 8, 12, 16, 20, 24
 - Clean card design with light backgrounds
 
 ### 5. How to Order Section
-**Layout:** Two-column comparison (InstaDelivery vs iFood)
+**Layout:** Two-column comparison (InstaDelivery vs iFood vs 99Food)
 - Each column as prominent card with platform logo
 - **InstaDelivery card:**
   - Horário: 9h-20h
@@ -98,6 +98,12 @@ Primary spacing: 4, 8, 12, 16, 20, 24
   - Conveniência da plataforma
   - Frete por distância
   - CTA: "Pedir no iFood"
+
+  - **99Food card:**
+  - Horário: 9h-22h
+  - Conveniência da plataforma
+  - Frete por distância
+  - CTA: "Pedir no 99 Food"
 
 ### 6. Payment Methods Section
 **Layout:** Icon grid (3 columns mobile, 6 columns desktop)

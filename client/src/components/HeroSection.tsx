@@ -13,6 +13,15 @@ export default function HeroSection() {
     );
   };
 
+    const handle99Food = () => {
+    window.open(
+      "https://oia.99app.com/dlp9/0XsnCy?area=BR",
+      "_blank"
+    );
+  };
+
+  
+
   return (
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
       <div className="absolute inset-0">
@@ -55,6 +64,15 @@ export default function HeroSection() {
               data-testid="button-hero-ifood"
             >
               Pedir no iFood
+            </Button>
+             <Button
+              size="lg"
+              variant="outline"
+              onClick={handle99Food}
+              className="rounded-full border-white/30 bg-white/10 px-8 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/20 hover:text-white"
+              data-testid="button-hero-99food"
+            >
+              Pedir na 99 Food
             </Button>
           </div>
         </div>
