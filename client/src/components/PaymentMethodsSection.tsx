@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { CreditCard, Smartphone, QrCode } from "lucide-react";
+import { CreditCard, Smartphone, QrCode, Ticket } from "lucide-react";
 
 const paymentMethods = [
   { name: "Crédito", icon: CreditCard, color: "text-blue-600" },
@@ -8,6 +8,8 @@ const paymentMethods = [
   { name: "VR", icon: Smartphone, color: "text-orange-600" },
   { name: "Alelo", icon: Smartphone, color: "text-red-600" },
   { name: "Pluxee", icon: Smartphone, color: "text-purple-600" },
+  { name: "Ticket", icon: Ticket, color: "text-yellow-600" },
+  { name: "Verocard", icon: CreditCard, color: "text-cyan-600" },
 ];
 
 export default function PaymentMethodsSection() {
@@ -23,7 +25,7 @@ export default function PaymentMethodsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 md:grid-cols-6 md:gap-6">
+        <div className="grid grid-cols-4 gap-4 md:grid-cols-8 md:gap-6">
           {paymentMethods.map((method, index) => (
             <Card
               key={index}
