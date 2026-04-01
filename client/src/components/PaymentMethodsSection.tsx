@@ -1,10 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { CreditCard, QrCode } from "lucide-react";
 
-const paymentMethods = [
+const mainMethods = [
   { name: "Crédito", icon: CreditCard, color: "text-blue-600" },
   { name: "Débito", icon: CreditCard, color: "text-green-600" },
   { name: "PIX", icon: QrCode, color: "text-teal-600" },
+];
+
+const benefitMethods = [
   { name: "VR", icon: CreditCard, color: "text-orange-600" },
   { name: "Alelo", icon: CreditCard, color: "text-red-600" },
   { name: "Pluxee", icon: CreditCard, color: "text-purple-600" },
@@ -25,11 +28,11 @@ export default function PaymentMethodsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 md:grid-cols-8 md:gap-6">
-          {paymentMethods.map((method, index) => (
+        <div className="flex justify-center gap-4 md:gap-6">
+          {mainMethods.map((method, index) => (
             <Card
               key={index}
-              className="flex flex-col items-center justify-center p-4 text-center md:p-6"
+              className="flex w-28 flex-col items-center justify-center p-4 text-center md:w-36 md:p-6"
               data-testid={`card-payment-${method.name.toLowerCase()}`}
             >
               <method.icon className={`mb-2 h-8 w-8 md:h-10 md:w-10 ${method.color}`} />
@@ -38,6 +41,26 @@ export default function PaymentMethodsSection() {
               </span>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-8">
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+            Cartões de Benefícios
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {benefitMethods.map((method, index) => (
+              <Card
+                key={index}
+                className="flex w-28 flex-col items-center justify-center p-4 text-center md:w-36 md:p-6"
+                data-testid={`card-payment-${method.name.toLowerCase()}`}
+              >
+                <method.icon className={`mb-2 h-8 w-8 md:h-10 md:w-10 ${method.color}`} />
+                <span className="text-sm font-medium text-foreground md:text-base">
+                  {method.name}
+                </span>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
