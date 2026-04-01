@@ -1,14 +1,14 @@
 import { Card } from "@/components/ui/card";
-import { CreditCard, Smartphone, QrCode, Ticket } from "lucide-react";
+import { CreditCard, QrCode } from "lucide-react";
 
 const paymentMethods = [
   { name: "Crédito", icon: CreditCard, color: "text-blue-600" },
   { name: "Débito", icon: CreditCard, color: "text-green-600" },
   { name: "PIX", icon: QrCode, color: "text-teal-600" },
-  { name: "VR", icon: Smartphone, color: "text-orange-600" },
-  { name: "Alelo", icon: Smartphone, color: "text-red-600" },
-  { name: "Pluxee", icon: Smartphone, color: "text-purple-600" },
-  { name: "Ticket", icon: Ticket, color: "text-yellow-600" },
+  { name: "VR", icon: CreditCard, color: "text-orange-600" },
+  { name: "Alelo", icon: CreditCard, color: "text-red-600" },
+  { name: "Pluxee", icon: CreditCard, color: "text-purple-600" },
+  { name: "Ticket", icon: CreditCard, color: "text-yellow-600" },
   { name: "Verocard", icon: CreditCard, color: "text-cyan-600" },
 ];
 
